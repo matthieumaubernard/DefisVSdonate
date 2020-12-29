@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tailwind CSS Tutorial by Themesberg</title>
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="h-screen">
+      <nav class="container flex items-center justify-between p-6 mx-auto">
+        <!-- Logo -->
+        <svg
+          class="w-10 h-10 animate-pulse stroke-current"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 54 64"
+        >
+          <defs>
+            <style>
+              .cls-1 {
+                fill: #ec3507;
+              }
+
+              .cls-2,
+              .cls-4 {
+                fill: #ffffff;
+              }
+
+              .cls-2 {
+                opacity: 0.32;
+                isolation: isolate;
+              }
+
+              .cls-3 {
+                opacity: 0.16;
+              }
+            </style>
+          </defs>
+          <title>logo</title>
+          <g id="Layer_2" data-name="Layer 2">
+            <g id="Layer_1-2" data-name="Layer 1">
+              <g id="Group_16" data-name="Group 16">
+                <g id="Group_15" data-name="Group 15">
+                  <g id="Group_12" data-name="Group 12">
+                    <path
+                      id="Path_35"
+                      data-name="Path 35"
+                      class="cls-1"
+                      d="M53.52,1.87l-22,5.39a1.61,1.61,0,0,1-1.23-.21L19.89.25a1.57,1.57,0,0,0-1.3-.19l-18,5.3A.77.77,0,0,0,0,6.09V16.87L18.59,11.4a1.57,1.57,0,0,1,1.3.19l10.4,6.79a1.53,1.53,0,0,0,1.23.21L54,13.09V2.23a.39.39,0,0,0-.39-.38Z"
+                    ></path>
+                    <path
+                      id="Path_36"
+                      data-name="Path 36"
+                      class="cls-1"
+                      d="M40.25,27.84l-8.73,2.1a1.57,1.57,0,0,1-1.23-.21l-10.4-6.8a.37.37,0,0,0-.53.11.31.31,0,0,0-.07.2V33.47a.75.75,0,0,0,.34.63l10.66,7a1.57,1.57,0,0,0,1.23.2l9.23-2.21A6.86,6.86,0,0,0,46,32.45v-.21a4.62,4.62,0,0,0-4.68-4.55A4.93,4.93,0,0,0,40.25,27.84Z"
+                    ></path>
+                    <path
+                      id="Path_37"
+                      data-name="Path 37"
+                      class="cls-1"
+                      d="M40.25,50.52l-8.73,2.1a1.61,1.61,0,0,1-1.23-.21l-10.4-6.8a.38.38,0,0,0-.53.1.35.35,0,0,0-.07.21V56.15a.75.75,0,0,0,.34.63l10.66,7a1.53,1.53,0,0,0,1.23.21l9.23-2.22A6.84,6.84,0,0,0,46,55.13v-.21a4.62,4.62,0,0,0-4.68-4.55A4.39,4.39,0,0,0,40.25,50.52Z"
+                    ></path>
+                  </g>
+                  <path
+                    id="Path_38"
+                    data-name="Path 38"
+                    class="cls-2"
+                    d="M30.86,41.29V30a1.63,1.63,0,0,0,.66,0L35.28,29l2.2,10.8-6,1.46A1.47,1.47,0,0,1,30.86,41.29Zm8.82,9.33-8.16,2a1.63,1.63,0,0,1-.66,0V64a1.63,1.63,0,0,0,.66,0l10.36-2.54Zm-8.82-32a1.63,1.63,0,0,0,.66,0l1.57-.38L30.86,7.28Z"
+                  ></path>
+                  <g id="Group_13" data-name="Group 13" class="cls-3">
+                    <path
+                      id="Path_39"
+                      data-name="Path 39"
+                      class="cls-4"
+                      d="M19.29,11.36a1.82,1.82,0,0,1,.6.23l10.4,6.8a1.41,1.41,0,0,0,.57.22V7.27a1.41,1.41,0,0,1-.57-.22L19.89.25a1.82,1.82,0,0,0-.6-.23Z"
+                    ></path>
+                    <path
+                      id="Path_40"
+                      data-name="Path 40"
+                      class="cls-4"
+                      d="M30.86,52.64a1.67,1.67,0,0,1-.57-.23l-10.4-6.8a.39.39,0,0,0-.54.11.36.36,0,0,0-.06.2V56.15a.75.75,0,0,0,.34.63l10.66,7a1.73,1.73,0,0,0,.57.22Z"
+                    ></path>
+                    <path
+                      id="Path_41"
+                      data-name="Path 41"
+                      class="cls-4"
+                      d="M19.89,22.93a.39.39,0,0,0-.54.11.36.36,0,0,0-.06.2V33.47a.75.75,0,0,0,.34.63l10.66,7a1.58,1.58,0,0,0,.57.22V30a1.43,1.43,0,0,1-.57-.23Z"
+                    ></path>
+                  </g>
+                </g>
+              </g>
+            </g>
+          </g>
+        </svg>
+
+        <!-- Menu items -->
+        <div class="hidden text-lg text-gray-600 lg:flex">
+          <a
+            href="index.html"
+            class="block mt-4 mr-10 lg:inline-block hover:text-gray-700 lg:mt-0"
+          >
+            Accueil
+          </a>
+
+          <a
+            href="quesaco.html"
+            class="block mt-4 mr-10 lg:inline-block hover:text-gray-700 lg:mt-0"
+          >
+            Quésaco ?
+          </a>
+
+          <a
+            href="#"
+            class="block mt-4 mr-10 lg:inline-block hover:text-gray-700 lg:mt-0"
+          >
+            Les Défis
+          </a>
+
+          <a
+            href="#"
+            class="block mt-4 mr-10 lg:inline-block hover:text-gray-700 lg:mt-0"
+          >
+            Donate
+          </a>
+
+          <a
+            href="#"
+            class="block mt-4 hover:text-grey-700 lg:inline-block lg:mt-0"
+          >
+            Contact
+          </a>
+          
+        </div>
+
+        <!-- CTA and Hamburger icon -->
+        <div class="flex items-center">
+          <div class="mr-5 lg:mr-0">
+            <button
+              class="px-6 py-2 text-lg text-gray-600 rounded-md hover:text-gray-700"
+            >
+              Sign in
+            </button>
+            <button class="px-6 py-2 text-lg text-white bg-blue-500 rounded-md">
+              Sign up
+            </button>
+          </div>
+
+          <div class="block lg:hidden">
+            <button
+              class="flex items-center px-4 py-3 text-teal-500 border border-teal-500 rounded focus:outline-none"
+            >
+              <svg
+                class="w-3 h-3 fill-current"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <title>Menu</title>
+
+                <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </nav>
+
+      <main class="mt-12 lg:mt-32">
+        <section class="container mx-auto my-auto">
+          <div class="w-full lg:flex place-content-center">
+            <div class="w-full lg:w-1/2">
+              <h2 class="text-gray-600 text-md lg:text-2xl">
+                Défis VS Donate en mode "tuerie"
+              </h2>
+              <h1
+                class="bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-green-400 text-5xl font-black 5xl text-mb-2 lg:text-6xl lg:mb-6"
+              >
+                QUESACO ???
+              </h1>
+              <p class="mb-8 font-light text-gray-800 text-md lg:text-xl">
+                Le but du <strong>Défis VS Donate</strong> consiste tout simplement en une participation entre les <strong>viewers</strong> et le <strong>streamer</strong> et
+                ainsi donner la possibilité d'agrandir et de profiter d'un peu plus de contenu chaque jour. 😉<br>
+                <br>
+                 Je vous explique en quelques étapes le concept :<br>
+                <br>
+                &emsp;🔹 Bien lire ce qui suit. <br>
+                <br>
+                &emsp;🔹 Réfléchir à un défi intéressant aussi bien pour les viewers, que pour le streamer.  <br>
+                <br>
+                &emsp;🔹 Cliquer sur la page Donate. <br>
+                <br>
+                &emsp;🔹 Attendre la validation ou non de votre défi (réponse par email). <br>
+                <br>
+              </p>
+              <p class="text-sm text-gray-800">
+                ps: svp par respect faite en sorte que vos défis et vos donate concorde, je n'accepterais pas des défis du style: "finir tel jeu en tant de temps pour 1 €"... 
+              </p>
+            </div>
+
+          </div>
+        </section>
+      </main>
+    </header>
+  </body>
+</html>
