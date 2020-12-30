@@ -3,6 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Cette page est dédiée aux défis donnés par la communautée de MyNewDventure... Streameur / Viewers / Followers un site pour tous."
+    />
+    <meta
+      name="keywords"
+      content="défis, donate, donations, mynewdventure, défiszack, défis mynewdventure, défis vs donate, streameur zack, streameur twitch, streameur youtube, streameur facebook"
+    />
+
     <title>Accueil</title>
     <link
       href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
@@ -10,7 +19,7 @@
     />
   </head>
   <body>
-    <header class="h-screen">
+    <header class="h-screen bg-cover bg-center" style="background-image: url()">
       <nav class="container flex items-center justify-between p-6 mx-auto">
         <!-- Logo -->
         <svg
@@ -132,20 +141,12 @@
           >
             Contact
           </a>
-          
         </div>
 
         <!-- CTA and Hamburger icon -->
         <div class="flex items-center">
           <div class="mr-5 lg:mr-0">
-            <button
-              class="px-6 py-2 text-lg text-gray-600 rounded-md hover:text-gray-700"
-            >
-              Sign in
-            </button>
-            <button class="px-6 py-2 text-lg text-white bg-blue-500 rounded-md">
-              Sign up
-            </button>
+            <!-- Ici seront placé les réseaux -->
           </div>
 
           <div class="block lg:hidden">
@@ -174,7 +175,7 @@
                 Nouvelle génération de Défis
               </h2>
               <h1
-                class="bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-green-400 text-5xl font-black 5xl text-mb-2 lg:text-6xl lg:mb-6 my-5 "
+                class="bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-green-400 text-5xl font-black 5xl text-mb-2 lg:text-6xl lg:mb-6 my-5"
               >
                 DEFIS VS DONATE
               </h1>
@@ -217,7 +218,7 @@
                     >Plateforme:</label
                   >
                   <select
-                    class="w-full p-3 border border-gray-200 rounded-2xl focus:outline-none appearance-none"
+                    class="w-full p-3 border-gray-200 rounded-2xl focus:outline-none appearance-none"
                     required
                   >
                     <option value="">-- Comment m'avez-vous connu --</option>
@@ -232,14 +233,13 @@
 
                 <div class="mb-6">
                   <label for="VotreDéfi" class="block mb-3 text-gray-700"
-                    >Votre Defis:
-                  </label>
-
-                  <textarea
-                    placeholder="Détaillez au maximum le défi que vous voulez voir apparaître sur le site et bien entendu en live... Il sera lus et réfléchis avant l'acceptation et je me devrais une fois accepter de faire le défi quoi qu'il en coûte..."
-                    class="w-full max-h-60 p-3 border border-gray-200 rounded-2xl focus:outline-none"
-                  >
-                  </textarea>
+                    >Votre Defi / Le Montant: </label
+                  ><textarea
+                    maxlength="255"
+                    placeholder="Détaillez au maximum le défi que vous voulez voir apparaître sur le site et bien entendu en live... Il sera lus et réfléchis avant l'acceptation et je me devrais une fois accepter de faire le défi quoi qu'il en coûte...."
+                    class="w-full pl-5 pr-5 pb-32 pt-5 border border-gray-200 rounded-2xl focus:outline-none"
+                    required
+                  ></textarea>
                 </div>
 
                 <button

@@ -1,6 +1,6 @@
 module.exports = {
   purge: {
-    enabled: false,
+    enabled: true,
     content: [
         './**/*.html'
     ]
@@ -12,10 +12,7 @@ module.exports = {
       body: ['Nunito', 'sans-serif']
       },
       extend: {
-        colors: {
-            primary: '#EA755E',
-            secondary: '#BD675F'
-        }
+
     }
   },
   variants: {},
