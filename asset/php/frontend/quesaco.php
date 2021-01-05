@@ -1,4 +1,5 @@
-<?php require_once('index.php'); ?>
+<?php require_once('template.php'); ?>
+
     <section class="quesaco">
       <div class="text-center w-4/5 mx-auto ">
         <h1 class="text-white font-black text-2xl lg:text-2xl">
@@ -35,6 +36,5 @@
         </p>
       </div>
     </section>
-    
 
 

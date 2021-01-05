@@ -991,3 +991,11 @@ video {
 @media (min-width: 1536px) {
 }
 
+#accueil {
+  height: 87.6vh;
+}
+#contact {
+  height: 87.6vh;
+}
+
+
