@@ -1,5 +1,5 @@
 <div id="contact_form">
-  <form method="post" class="p-12  bg-gray-100 shadow-sm rounded-2xl">
+  <form method="post" class="w-11/12 mx-auto my-auto p-12 bg-gray-100 shadow-sm rounded-2xl">
     <div class="mb-6">
       <label for="name" class="block mb-3 text-gray-700">Pseudo:</label>
       <input type="text" id="name" name="pseudo" class="w-full p-3 bg-white border border-gray-200 rounded-2xl focus:outline-none" placeholder="votre pseudonyme" required />

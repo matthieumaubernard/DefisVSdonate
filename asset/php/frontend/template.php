@@ -27,6 +27,9 @@
   <!-- liens vers le cdn min de tailwindcss -->
   <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
   <link rel="stylesheet" href="/asset/css/output.css">
+  <link rel="stylesheet" href="/asset/sass/dist/sass.css">
+ 
+
 
   <!-- lien vers ma favicone -->
   <link rel="icon" href="/asset/img/logo.svg" type="image/x-icon">

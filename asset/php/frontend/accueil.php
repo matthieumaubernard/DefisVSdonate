@@ -1,9 +1,9 @@
 <?php require_once('template.php'); ?>
 
 <main id="accueil">
-  <section class="container py-12 w-11/12  mx-auto my-auto">
-    <div class="items-center lg:flex">
-      <div class="text-center xl:text-left w-full h-full lg:w-1/2">
+  <section class="container py-12 w-11/12  mx-auto my-auto lg:flex justify-center items-center">
+    <div class="items-center lg:flex justify-center">
+      <div class=" w-11/12 mx-auto my-auto text-center xl:text-left h-full lg:w-1/2 mr-20">
         <h1 class=" text-white text-2xl md:text-3xl lg:text-5xl">
           Nouvelle génération de Défis
         </h1>
@@ -15,10 +15,7 @@
           voyons voir si celui-ci sera tiré et accepté pour être mis en
           avant.
         </p>
+        <?php include('../backend/formDefis.php'); ?> //
       </div>
-      <div>
-        <?php require_once('../backend/formDefis.php'); ?> //
-        <?php require_once('/asset/php/backend/formDefis.php'); ?> // règle pour l'index
-    </div>
   </section>
 </main>

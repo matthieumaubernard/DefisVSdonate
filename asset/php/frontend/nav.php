@@ -43,7 +43,7 @@
 
 
         <!-- Menu items -->
-        <div id="burger" class="hidden flex flex-col justify-center items-center bg-blue-500 fixed w-screen h-screen top-0 left-0 text-5xl text-white">
+        <div id="burger" class="hidden sm:flex flex-col justify-center items-center bg-black fixed w-screen h-screen top-0 left-0 text-5xl text-white ">
           <a href="/asset/php/frontend/accueil.php" class="block py-5 lg:inline-block lg:mt-0">
             Accueil
           </a>
@@ -67,7 +67,7 @@
 
         <!-- CTA and Hamburger icon -->
         <div class="flex items-center">
-          <div class="block lg:hidden">
+          <div class="">
               <button id="btn_burger" class="right-0 block px-4 py-3 text-blue-400 focus:outline-none">
               <svg class="w-10 h-10 fill-current bg-clip-text" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
 

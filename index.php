@@ -1,1 +1,1 @@
-<?php require_once('asset/php/frontend/accueil.php'); ?>
+<?php require_once('asset/php/frontend/accueil.php');
